@@ -14,7 +14,4 @@ print(vocab)
 
 output = model(input_ids, input_mask, token_type_ids)
 print(output.pooler_output.shape) # Use `output` instead of using `pooled_output`.
-print(output) # Use `output` instead of using `sequence_output[0]`.
-
-# print(vocab)
-# print(sequence_output[0])
+print(output[0]) # Use `output` instead of using `sequence_output[0]`.

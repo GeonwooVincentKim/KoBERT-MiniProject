@@ -12,8 +12,9 @@ print(token_type_ids)
 print(model)
 print(vocab)
 
-pooled_output = model(input_ids, input_mask, token_type_ids)
+output = model(input_ids, input_mask, token_type_ids)
 print(output.pooler_output.shape)
+print(output)
 
-print(vocab)
-print(sequence_output[0])
+# print(vocab)
+# print(sequence_output[0])
